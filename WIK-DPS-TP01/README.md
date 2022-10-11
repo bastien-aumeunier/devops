@@ -5,7 +5,7 @@ To run this project you just need to clone the repo:
 
 `git clone git@github.com:bastien-aumeunier/devops.git`
 
-Go on `/WIK-DPS-TP01`
+Go on `/TP/WIK-DPS-TP01`
 
 You need install all node modules with:
 

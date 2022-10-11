@@ -19,6 +19,11 @@ app.get('/ping', (req, res)=> {
 app.get('*', (_, res)=> {
     res.status(404)
     res.send(' ')
-});
+})
+
+app.post('*', (_, res)=> {
+    res.status(404)
+    res.send(' ')
+})
 
 

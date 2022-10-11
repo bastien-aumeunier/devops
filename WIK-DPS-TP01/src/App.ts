@@ -12,12 +12,12 @@ app.listen(process.env.PING_LISTEN_PORT, () => {
 
 
 app.get('/ping', (req, res)=> {
-    res.setHeader('Content-Type', 'application/json')
-    res.send(req.headers).status(200)
+    res.json(JSON.stringify(req.headers)).status(200)
 })
 
 app.get('*', (_, res)=> {
-    res.send('').status(404)
+    res.status(404)
+    res.send(' ')
 });
 
 

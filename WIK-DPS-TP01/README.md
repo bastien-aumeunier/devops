@@ -1,6 +1,13 @@
 # TP WIK-DPS-TP01
+## Context :
 
-## Run Project
+### API:
+
+`GET` **->** `http://your.url/ping`
+  **->** Send back all headers of the request in JSON format
+
+
+## Run Project :
 To run this project you just need to clone the repo: 
 
 `git clone git@github.com:bastien-aumeunier/devops.git`
@@ -30,5 +37,11 @@ And run with
 ```
 node build/App.js
 ```
+
+## Usage :
+
+Open a browser and go on `http://localhost:3000/ping`
+
+You can see all your request headers
 
 

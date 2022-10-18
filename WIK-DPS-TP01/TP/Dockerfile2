@@ -1,0 +1,9 @@
+FROM node:16.14.0 as builder
+WORKDIR /TP
+COPY . /TP
+RUN npm install
+
+FROM node:latest
+WORKDIR /app
+COPY --from=builder /TP/build /app
+CMD ["node", "build/App.js"]

@@ -44,4 +44,20 @@ Open a browser and go on `http://localhost:3000/ping`
 
 You can see all your request headers
 
+## Run docker:
+
+Go on `TP` folder :
+
+Run : 
+```
+docker build . -t  bastien/docker1
+docker run -dp 3000:8080 bastien/docker1
+```
+
+Or Run : 
+```
+docker build . -f "Dockerfile2" -t  bastien/docker2
+docker run -dp 3000:8080 bastien/docker2
+```
+
 
